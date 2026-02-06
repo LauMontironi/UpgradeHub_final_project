@@ -1,0 +1,25 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Variables de entorno
+.env
+
+# Certificados
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# FastAPI / Uvicorn
+*.log
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db

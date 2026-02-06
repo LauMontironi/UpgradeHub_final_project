@@ -1,0 +1,16 @@
+@host = http://127.0.0.1
+@port = 8000
+
+###GET ALL MENUS     NO REQUIERE AUTENTICACION- LO PODEMOS VER SIN HACER LOGIN 
+
+GET {{host}}:{{port}}/menu
+
+
+### ✅ GET menu por fecha (OK)
+GET {{host}}:{{port}}/menu/2024-05-22
+
+### ❌ GET menu por fecha (400 formato)
+GET {{host}}:{{port}}/menu/22-05-2024
+
+### ❌ GET menu por fecha (404 no existe)
+GET {{host}}:{{port}}/menu/2025-01-01

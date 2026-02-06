@@ -1,0 +1,10 @@
+@host = http://127.0.0.1
+@port = 8000
+
+
+###🔍 GET /usuarios/id // para probarla primerohay que loguearse y obtener el token 
+
+GET {{host}}:{{port}}/usuarios/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJsYXVyYUBkZW1vLmNvbSIsIm5vbWJyZSI6IkxhdXJhIE1vbnRpcm9uaSIsInJvbCI6ImNsaWVudGUiLCJleHAiOjE3NzAzOTMxMzd9.wzcmttk7UtoN0ZiKz9aGh7OLMEXCMy0Z-_3eQG1a-eY
+

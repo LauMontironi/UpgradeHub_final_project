@@ -1,0 +1,25 @@
+@host = http://127.0.0.1
+@port = 8000
+
+
+### ##➕ POST /auth/register
+
+POST {{host}}:{{port}}/auth/register
+Content-Type: application/json
+
+{
+    "nombre": "Laura Montironi",
+    "email": "laura@demo.com",
+    "password": "Demo1234"
+}
+
+
+###🔑 POST /auth/login
+
+POST {{host}}:{{port}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "laura@demo.com",
+  "password": "Demo1234"
+}
